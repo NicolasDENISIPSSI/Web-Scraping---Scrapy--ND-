@@ -33,3 +33,10 @@ class ReviewsBoursoramaItem(scrapy.Item):
     open_ = scrapy.Field()
     time = scrapy.Field()
     pass
+
+
+class ReviewsAnimelistSpider(scrapy.Item):
+    title = scrapy.Field()
+    img = scrapy.Field()
+    desc = scrapy.Field()
+    pass
