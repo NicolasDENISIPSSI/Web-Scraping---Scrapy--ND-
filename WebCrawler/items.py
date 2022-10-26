@@ -11,6 +11,7 @@ class WebcrawlerItem(scrapy.Item):
     # name = scrapy.Field()
     pass
 
+
 class ReviewsAllocineItem(scrapy.Item):
     title = scrapy.Field()
     img = scrapy.Field()
@@ -18,6 +19,17 @@ class ReviewsAllocineItem(scrapy.Item):
     time = scrapy.Field()
     genre = scrapy.Field()
     score = scrapy.Field()
-    desc = scrapy.Field()   
+    desc = scrapy.Field()
     release = scrapy.Field()
+    pass
+
+
+class ReviewsBoursoramaItem(scrapy.Item):
+    indice = scrapy.Field()
+    cours = scrapy.Field()
+    var = scrapy.Field()
+    hight = scrapy.Field()
+    low = scrapy.Field()
+    open_ = scrapy.Field()
+    time = scrapy.Field()
     pass

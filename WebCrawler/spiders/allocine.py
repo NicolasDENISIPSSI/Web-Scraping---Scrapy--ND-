@@ -7,7 +7,7 @@ class AllocineSpider(scrapy.Spider):
     name = 'allocine'
     allowed_domains = ['www.allocine.fr']
 
-    n = input("Entrez le nombre de page que vous souhaitez avec un max de 10 : ")
+    #n = input("Entrez le nombre de page que vous souhaitez avec un max de 10 : ")
 
     # Liste des pages à collecter
     start_urls = [
