@@ -8,7 +8,7 @@ class BoursoramaSpider(scrapy.Spider):
     name = 'boursorama'
     allowed_domains = ['www.boursorama.com']
     start_urls = [
-        'https://www.boursorama.com/bourse/actions/palmares/france/page-1']
+        f'https://www.boursorama.com/bourse/actions/palmares/france/page-{n}?france_filter%5Bmarket%5D=1rPCAC' for n in range(1, 3)]
 
     def start_requests(self):
         for url in self.start_urls:
